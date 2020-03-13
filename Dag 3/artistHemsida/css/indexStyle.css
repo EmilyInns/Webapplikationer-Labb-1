@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat&family=Slabo+27px&display=swap');
+
+body{
+    background-color: grey;
+    font-family: 'Slabo 27px', serif;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+            "header"
+            "navigation"
+            "main-content"
+            "footer";
+    grid-gap: 1px;
+}
+
+header{
+    font-family: 'Fredericka the Great', cursive, 'Roboto Slab', "Times New Roman";
+    grid-area: header;
+    background-color: #FCD6AC;
+    padding: 5px;
+    color: #F45990;
+    text-align: center;
+    font-size: 30px;
+}
+
+nav{
+    grid-area: navigation;
+    background-color: #ccc;
+    color: #FCD6AC;
+}
+
+nav.nav_list{
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: #F45990;
+    color: #FCD6AC;
+}
+
+nav.nav_list a{
+    color: #FCD6AC;
+}
+
+ul a:hover{
+    font-weight: bold;
+}
+
+
+
+main{
+    grid-area: main-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+    text-align: center;
+    background-color: blue;
+}
+
+main img{
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+
+}
+
+
+main article{
+    background-color: yellow;
+    padding: 10px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: orange;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 0px
+}
+a{
+    color:#F45990;
+    text-decoration:none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 7px;
+}
+
+/* Desktop */
+@media screen and (min-width: 1025px) {
+    body {
+    }
+
+    section.grid-container {
+        width: 1000px;
+        margin: 20px auto;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        /*grid-template-columns: 1fr;*/
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+
+
+
+    main article{
+        margin: auto;
+    }
+
+    nav.nav_list { /* Centerar navigeringsmenyn */
+        text-align: center;
+    }
+
+    nav.nav_list ul li {
+        display: inline; /* Visar menyn som inline */
+        padding: 10px;
+    }
+
+
+}

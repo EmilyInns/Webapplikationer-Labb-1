@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat&family=Slabo+27px&display=swap');
+body{
+    font-family: 'Slabo 27px', serif;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Fredericka the Great', cursive, 'Roboto Slab', "Times New Roman";
+    font-size: 60px;
+    color: #F45990;
+}
+
+coverVid {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+fieldset{
+    text-align: center;
+}
+
+p{
+
+}
+
+/*
+ul li::before {
+     content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet
+    color: #FCC89B;
+}*/
+
+
+ol{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* ul li{
+display: block;
+} */
+
+a{
+    color: #F45990;
+    text-decoration: none;
+}
+
+ul a:hover{
+    font-weight: bold;
+}
+
+
+/* a:visited{
+    color: #FCC89B
+}
+ */
+
+/*.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+}*/

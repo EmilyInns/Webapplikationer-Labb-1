@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat&family=Slabo+27px&display=swap');
+
+body{
+    background-color: grey;
+    font-family: 'Slabo 27px', serif;
+}
+
+h3{
+    text-align: center;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+            "header"
+            "visual"
+            "main-content"
+            "footer";
+    grid-gap: 2px;
+}
+
+header{
+    font-family: 'Fredericka the Great', cursive, 'Roboto Slab', "Times New Roman";
+    grid-area: header;
+    background-color: #FCD6AC;
+    padding: 5px;
+    color: #F45990;
+    text-align: center;
+    font-size: 30px;
+}
+
+visual{
+ grid-area: main-content;
+    display: grid;
+    grid-template-rows:1fr 1fr;
+    grid-gap: 5px;
+    text-align: center;
+    margin: 0px;
+    background-color: white;
+
+}
+visual article{
+    background-color: white;
+    padding: 5px;
+}
+
+
+visual img{
+    object-fit: cover;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+visual iframe{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+}
+
+ul a:hover{
+    font-weight: bold;
+}
+
+main{
+    grid-area: main-content;
+    display: grid;
+    grid-template-rows:auto auto;
+    grid-gap: 1px;
+    text-align: center;
+    background-color: blue;
+}
+
+
+
+main article{
+    background-color: yellow;
+    padding: 5px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: pink;
+    text-align: center;
+}
+a{
+    color:#F45990;
+    text-decoration:none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 7px;
+}
+
+main article.tracklist{
+    background-color: white;
+    text-align: center;
+}
+
+main article.tracklist li{
+    padding-left: 0.5em;
+}
+
+/* Desktop and tablet */
+@media screen and (min-width: 768px) {
+
+
+    section.grid-container {
+        width: auto;
+        margin: auto;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        /*grid-template-columns: 1fr;*/
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+
+
+    main article{
+        margin: 5px;
+    }
+
+    main article.tracklist{
+        margin-left: 30%;
+        margin-right: 30%;
+        text-align: left;
+    }
+
+    visual{
+        grid-area: main-content;
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:1fr;
+        grid-gap: 5px;
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+}
+
+    visual iframe{
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    nav.nav_list { /* Centerar navigeringsmenyn */
+        text-align: center;
+    }
+
+    nav.nav_list ul li {
+        display: inline; /* Visar menyn som inline */
+        padding: 10px;
+    }
+
+
+}
+
+/* Desktop */
+@media screen and (min-width: 1025px) {
+    main article.tracklist{
+        margin-left: 40%;
+        margin-right: 40%;
+    }
+}
