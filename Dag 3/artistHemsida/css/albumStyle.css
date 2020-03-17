@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat&family=Slabo+27px&display=swap');
 
 body{
-    background-color: grey;
+    background-color: white;
     font-family: 'Slabo 27px', serif;
 }
 
@@ -12,13 +12,35 @@ h3{
 section{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
     grid-template-areas:
             "header"
+            "navigation"
             "visual"
             "main-content"
             "footer";
     grid-gap: 2px;
+}
+
+nav{
+    grid-area: navigation;
+    background-color: #ccc;
+    color: #FCD6AC;
+}
+
+nav.nav_list{
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: #F45990;
+    color: #FCD6AC;
+}
+
+nav.nav_list a{
+    color: #FCD6AC;
+}
+
+ul a:hover{
+    font-weight: bold;
 }
 
 header{
@@ -70,19 +92,19 @@ main{
     grid-template-rows:auto auto;
     grid-gap: 1px;
     text-align: center;
-    background-color: blue;
+    background-color: white;
 }
 
 
 
 main article{
-    background-color: yellow;
+    background-color: white;
     padding: 5px;
 }
 
 footer {
     grid-area: footer;
-    background-color: pink;
+    background-color: white;
     text-align: center;
 }
 a{
